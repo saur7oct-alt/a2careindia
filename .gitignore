@@ -1,0 +1,26 @@
+# build
+node_modules/
+.next/
+out/
+build/
+
+# local env — the enquiry endpoint reads RESEND_API_KEY / ENQUIRY_WEBHOOK_URL from here
+.env
+.env.*
+!.env.example
+
+# customer data written by /api/enquiry when no forwarding endpoint is configured
+data/
+
+# logs & os
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
